@@ -1,5 +1,90 @@
+@import 'config';
 
 
-h1 {
-  color: blue;
+// General styling
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include background;
+  background: $primary-color;
+  height: 100%;
+  margin: 0;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+}
+
+// Headings
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+  
+
+
+  &.lg-heading {
+    font-size: 6rem;
+    font-family: "Lobster", cursive;
+  }
+
+  &.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, 2), 0.5);
+   
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  // z-index how an element is colse to you, the bigger the number , closer and bring the picture front
+  // if wanted to send the picture to the back make the numer -2 i.e.
+  z-index: 2;
+  width: 100%; 
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+// styling main body section of home page 
+
+main {
+padding: 4rem;
+height: 100%;
+min-height: calc(100vh - 60px);
+
+//styling social icons
+  .icons {
+    margin-top: 1rem;
+
+      a {
+        padding: 0.4rem;
+        
+            &:hover {
+              color: $secondary-color;
+              @include easeOut();
+              
+          }
+      
+      }
+  }
+
+  &#home {
+    // we don't want scroll bars in the page so overflow will be hidden
+    overflow: hidden;
+
+    h1 {
+      margin-top: 20vh;
+    }
+    
+  }
 }
