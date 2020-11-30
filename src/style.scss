@@ -1,5 +1,6 @@
 @import 'config';
 @import 'menu';
+@import 'animation';
 
 
 
@@ -180,6 +181,9 @@ min-height: calc(100vh - 60px);
   background: lighten($primary-color, 50);
   color: #333;
 }
+
+// Styling Contact form
+
 
 //Footer Styling.....
 

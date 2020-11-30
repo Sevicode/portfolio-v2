@@ -71,7 +71,7 @@
 .menu-nav {
   margin: 0;
   padding: 0;
-  background: #373737;
+  background: #01040c;
   list-style: none;
   -webkit-transform: translate3d(0, -100%, 0);
           transform: translate3d(0, -100%, 0);
@@ -85,7 +85,7 @@
 }
 
 .menu-branding {
-  background: #444;
+  background: #020d24;
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
   -webkit-transition: all 0.5s ease-out;
@@ -102,7 +102,7 @@
   height: 300px;
   background: url(./img/sevda.png);
   border-radius: 50%;
-  border: solid 3px #eece1a;
+  border: solid 3px #ff7b00;
 }
 
 .menu .nav-item {
@@ -131,7 +131,7 @@
 }
 
 .menu .nav-link:hover {
-  color: #eece1a;
+  color: #ff7b00;
 }
 
 .nav-item:nth-child(1) {
@@ -160,7 +160,7 @@
 }
 
 body {
-  background: #444;
+  background: #020d24;
   color: #FFF;
   height: 100%;
   margin: 0;
@@ -182,7 +182,7 @@ body#bg-img:after {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: rgba(68, 68, 68, 0.9);
+  background: rgba(2, 13, 36, 0.9);
 }
 
 h1,
@@ -204,7 +204,7 @@ h2.sm-heading,
 h3.sm-heading {
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
-  background: rgba(73, 73, 73, 0.5);
+  background: rgba(3, 16, 46, 0.5);
 }
 
 a {
@@ -219,7 +219,7 @@ header {
 }
 
 .text-secondary {
-  color: #eece1a;
+  color: #ff7b00;
 }
 
 main {
@@ -237,7 +237,7 @@ main .icons a {
 }
 
 main .icons a:hover {
-  color: #eece1a;
+  color: #ff7b00;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -265,7 +265,7 @@ main#home h1 {
   grid-area: bioimage;
   margin: auto;
   border-radius: 52%;
-  border: #eece1a 3px solid;
+  border: #ff7b00 3px solid;
 }
 
 .about-info .bio {
@@ -289,9 +289,9 @@ main#home h1 {
 }
 
 .about-info .skill {
-  background: #515151;
+  background: #03163c;
   padding: 0.5rem;
-  border-bottom: #eece1a 5px solid;
+  border-bottom: #ff7b00 5px solid;
 }
 
 .projects {
@@ -309,7 +309,7 @@ main#home h1 {
 
 .projects img:hover {
   opacity: 0.5;
-  border-color: #eece1a;
+  border-color: #ff7b00;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -322,7 +322,7 @@ main#home h1 {
 }
 
 .btn:hover, .btn-dark:hover, .btn-light:hover {
-  background: #eece1a;
+  background: #ff7b00;
   color: #000;
 }
 
@@ -332,14 +332,14 @@ main#home h1 {
 }
 
 .btn-light {
-  background: #c4c4c4;
+  background: #3170f4;
   color: #333;
 }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #2b2b2b;
+  background: black;
   color: #FFF;
   height: 60px;
 }
