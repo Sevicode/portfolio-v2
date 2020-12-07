@@ -250,17 +250,15 @@ main#home h1 {
 }
 
 .about-info {
-  display: -ms-grid;
   display: grid;
   grid-gap: 30px;
       grid-template-areas: 'bioimage bio bio' 'skill1 skill2 skill3';
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-}
+  /* -ms-grid-columns: (1fr)[3]; */
+      grid-template-columns: repeat(3, 1fr); }
 
 .about-info .bio-image {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  /* -ms-grid-row: 1;
+  -ms-grid-column: 1; */
   grid-area: bioimage;
   margin: auto;
   border-radius: 52%;
@@ -268,22 +266,22 @@ main#home h1 {
 }
 
 .about-info .bio {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
+  /* -ms-grid-row: 1;
+  -ms-grid-column: 2; */
+  /* -ms-grid-column-span: 2; */
   grid-area: bio;
   font-size: 1.5rem;
 }
 
 .about-info .skill-2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  /* -ms-grid-row: 2;
+  -ms-grid-column: 2; */
   grid-area: skill2;
 }
 
 .about-info .skill-3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
+  /* -ms-grid-row: 2;
+  -ms-grid-column: 3; */
   grid-area: skill3;
 }
 
@@ -297,8 +295,8 @@ main#home h1 {
   display: -ms-grid;
   display: grid;
   grid-gap: 0.7;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  /* -ms-grid-columns: (1fr)[3]; */
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .projects img {
@@ -345,14 +343,14 @@ main#home h1 {
 
 @media screen and (min-width: 1170px) {
   .projects {
-    -ms-grid-columns: (1fr)[4];
+    /* -ms-grid-columns: (1fr)[4]; */
         grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    -ms-grid-columns: (1fr)[3];
+    /* -ms-grid-columns: (1fr)[3]; */
         grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -396,7 +394,7 @@ main#home h1 {
         grid-template-columns: 1fr;
   }
   .projects {
-    -ms-grid-columns: (1fr)[2];
+    /* -ms-grid-columns: (1fr)[2]; */
         grid-template-columns: repeat(2, 1fr);
   }
 }
