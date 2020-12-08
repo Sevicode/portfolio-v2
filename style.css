@@ -250,15 +250,17 @@ main#home h1 {
 }
 
 .about-info {
+  display: -ms-grid;
   display: grid;
   grid-gap: 30px;
       grid-template-areas: 'bioimage bio bio' 'skill1 skill2 skill3';
-  /* -ms-grid-columns: (1fr)[3]; */
-      grid-template-columns: repeat(3, 1fr); }
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
 
 .about-info .bio-image {
-  /* -ms-grid-row: 1;
-  -ms-grid-column: 1; */
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: bioimage;
   margin: auto;
   border-radius: 52%;
@@ -266,22 +268,22 @@ main#home h1 {
 }
 
 .about-info .bio {
-  /* -ms-grid-row: 1;
-  -ms-grid-column: 2; */
-  /* -ms-grid-column-span: 2; */
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
   grid-area: bio;
   font-size: 1.5rem;
 }
 
 .about-info .skill-2 {
-  /* -ms-grid-row: 2;
-  -ms-grid-column: 2; */
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: skill2;
 }
 
 .about-info .skill-3 {
-  /* -ms-grid-row: 2;
-  -ms-grid-column: 3; */
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: skill3;
 }
 
@@ -295,8 +297,8 @@ main#home h1 {
   display: -ms-grid;
   display: grid;
   grid-gap: 0.7;
-  /* -ms-grid-columns: (1fr)[3]; */
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 
 .projects img {
@@ -333,6 +335,56 @@ main#home h1 {
   color: #333;
 }
 
+.contact-form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.contact-form form {
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 2px solid #dd820b;
+  border-radius: 2%;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.contact-form textarea {
+  height: 200px;
+  font-size: 0.8rem;
+}
+
+.contact-form .submit-button {
+  color: white;
+  font-size: 18px;
+  line-height: 16px;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#16113f), color-stop(50%, #0e0638), to(#08041f));
+  background-image: linear-gradient(to right, #16113f 0%, #0e0638 50%, #08041f 100%);
+  -webkit-box-shadow: black 5px 5px 15px 5px;
+          box-shadow: black 5px 5px 15px 5px;
+  border: 2px solid #dd820b;
+  display: inline-block;
+  width: auto;
+}
+
+.contact-form .submit-button:hover {
+  background: #7c7cc5;
+  color: #000002;
+}
+
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -343,14 +395,21 @@ main#home h1 {
 
 @media screen and (min-width: 1170px) {
   .projects {
-    /* -ms-grid-columns: (1fr)[4]; */
+    -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 50%;
+  }
+  .contact-form textarea {
+    height: 200px;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    /* -ms-grid-columns: (1fr)[3]; */
+    -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -394,7 +453,7 @@ main#home h1 {
         grid-template-columns: 1fr;
   }
   .projects {
-    /* -ms-grid-columns: (1fr)[2]; */
+    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
 }

@@ -183,7 +183,50 @@ min-height: calc(100vh - 60px);
 }
 
 // Styling Contact form
+.contact-form {
+  align-items: center;
+  margin-top: 20px;
 
+  form {
+    text-align: center;
+  }
+
+  input,
+  textarea{
+    border: 2px solid rgb(221, 130, 11);
+    border-radius: 2%;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+   
+  }
+
+  textarea {
+    height: 200px;
+    font-size: 0.8rem;
+  }
+  
+  .submit-button {
+    
+      color: rgb(255, 255, 255); 
+      font-size: 18px; line-height: 16px; 
+      padding: 10px; 
+      border-radius: 10px; 
+      font-weight: normal; 
+      text-decoration: none; 
+      font-style: normal; 
+      font-variant: normal; 
+      text-transform: none; background-image: linear-gradient(to right, rgb(22, 17, 63) 0%, rgb(14, 6, 56) 50%, rgb(8, 4, 31) 100%); 
+      box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(221, 130, 11); 
+      display: inline-block;
+      width: auto;
+      
+    }
+      .submit-button:hover {
+      background: #7c7cc5;
+      color: rgb(0, 0, 2); 
+    }
+}
 
 //Footer Styling.....
 
