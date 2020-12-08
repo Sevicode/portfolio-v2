@@ -3,6 +3,20 @@
     .projects {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .contact-form {
+        input,
+        textarea{
+        
+          width: 50%;
+         
+        }
+      
+        textarea {
+          height: 200px;
+        
+        }
+    }
 }
 
 // Desktop & Laptops
@@ -66,6 +80,9 @@
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
+
+
+  
 }
 
 // Smartphones

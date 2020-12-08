@@ -335,6 +335,56 @@ main#home h1 {
   color: #333;
 }
 
+.contact-form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.contact-form form {
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 2px solid #dd820b;
+  border-radius: 2%;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.contact-form textarea {
+  height: 200px;
+  font-size: 0.8rem;
+}
+
+.contact-form .submit-button {
+  color: white;
+  font-size: 18px;
+  line-height: 16px;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#16113f), color-stop(50%, #0e0638), to(#08041f));
+  background-image: linear-gradient(to right, #16113f 0%, #0e0638 50%, #08041f 100%);
+  -webkit-box-shadow: black 5px 5px 15px 5px;
+          box-shadow: black 5px 5px 15px 5px;
+  border: 2px solid #dd820b;
+  display: inline-block;
+  width: auto;
+}
+
+.contact-form .submit-button:hover {
+  background: #7c7cc5;
+  color: #000002;
+}
+
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -347,6 +397,13 @@ main#home h1 {
   .projects {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 50%;
+  }
+  .contact-form textarea {
+    height: 200px;
   }
 }
 
