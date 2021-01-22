@@ -4,7 +4,6 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -12,19 +11,18 @@
   width: 28px;
   height: 3px;
   margin: 0 0 5px 0;
-  background: #FFF;
-  -webkit-transition: all 0.5s ease-out;
+  background: #fff;
   transition: all 0.5s ease-out;
 }
 
 .menu-btn.close {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  
+  transform: rotate(180deg);
 }
 
 .menu-btn.close .btn-line:nth-child(1) {
-  -webkit-transform: rotate(45deg) translate(5px, 5px);
-          transform: rotate(45deg) translate(5px, 5px);
+
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 .menu-btn.close .btn-line:nth-child(2) {
@@ -32,8 +30,8 @@
 }
 
 .menu-btn.close .btn-line:nth-child(3) {
-  -webkit-transform: rotate(-45deg) translate(7px, -6px);
-          transform: rotate(-45deg) translate(7px, -6px);
+ 
+  transform: rotate(-45deg) translate(7px, -6px);
 }
 
 .menu {
@@ -52,16 +50,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
   float: left;
   width: 50%;
   height: 100vh;
@@ -73,28 +64,24 @@
   padding: 0;
   background: #01040c;
   list-style: none;
-  -webkit-transform: translate3d(0, -100%, 0);
-          transform: translate3d(0, -100%, 0);
-  -webkit-transition: all 0.5s ease-out;
+  transform: translate3d(0, -100%, 0);
   transition: all 0.5s ease-out;
 }
 
 .menu-nav.show {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+
+  transform: translate3d(0, 0, 0);
 }
 
 .menu-branding {
   background: #020d24;
-  -webkit-transform: translate3d(0, 100%, 0);
-          transform: translate3d(0, 100%, 0);
-  -webkit-transition: all 0.5s ease-out;
+  transform: translate3d(0, 100%, 0);
   transition: all 0.5s ease-out;
 }
 
 .menu-branding.show {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+
+  transform: translate3d(0, 0, 0);
 }
 
 .menu-branding .my-picture {
@@ -106,15 +93,14 @@
 }
 
 .menu .nav-item {
-  -webkit-transform: translate3d(600px, 0, 0);
-          transform: translate3d(600px, 0, 0);
-  -webkit-transition: all 0.5s ease-out;
+ 
+  transform: translate3d(600px, 0, 0);
   transition: all 0.5s ease-out;
 }
 
 .menu .nav-item.show {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+
+  transform: translate3d(0, 0, 0);
 }
 
 .menu .nav-link {
@@ -124,9 +110,8 @@
   text-transform: uppercase;
   padding: 1rem 0;
   font-weight: 300;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
-  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -135,33 +120,32 @@
 }
 
 .nav-item:nth-child(1) {
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+
+  transition-delay: 0.1s;
 }
 
 .nav-item:nth-child(2) {
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
+  
+  transition-delay: 0.2s;
 }
 
 .nav-item:nth-child(3) {
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+ 
+  transition-delay: 0.3s;
 }
 
 .nav-item:nth-child(4) {
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
+  
+  transition-delay: 0.4s;
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   background: #020d24;
-  color: #FFF;
+  color: #fff;
   height: 100%;
   margin: 0;
   line-height: 1.5;
@@ -175,7 +159,7 @@ body#bg-img {
 }
 
 body#bg-img:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -223,7 +207,6 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%;
   min-height: calc(100vh - 60px);
 }
 
@@ -232,13 +215,12 @@ main .icons {
 }
 
 main .icons a {
-  padding: 0.4rem;
+  padding-top: 1rem;
+  transition: all 0.5s ease-out;
 }
 
 main .icons a:hover {
   color: #ff7b00;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
 }
 
 main#home {
@@ -250,40 +232,33 @@ main#home h1 {
 }
 
 .about-info {
-  display: -ms-grid;
   display: grid;
   grid-gap: 30px;
-      grid-template-areas: 'bioimage bio bio' 'skill1 skill2 skill3';
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 'bioimage bio bio' 'skill1 skill2 skill3';
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .about-info .bio-image {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: bioimage;
   margin: auto;
-  border-radius: 52%;
+  border-radius: 50%;
   border: #ff7b00 3px solid;
 }
 
 .about-info .bio {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
   grid-area: bio;
   font-size: 1.5rem;
 }
 
+.about-info .skill-1 {
+  grid-area: skill1;
+}
+
 .about-info .skill-2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: skill2;
 }
 
 .about-info .skill-3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
   grid-area: skill3;
 }
 
@@ -297,8 +272,7 @@ main#home h1 {
   display: -ms-grid;
   display: grid;
   grid-gap: 0.7;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .projects img {
@@ -310,7 +284,6 @@ main#home h1 {
 .projects img:hover {
   opacity: 0.5;
   border-color: #ff7b00;
-  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -357,9 +330,8 @@ main#home h1 {
 }
 
 .contact-form {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+ 
+  align-items: center;
   margin-top: 20px;
 }
 
@@ -394,8 +366,7 @@ main#home h1 {
   text-transform: none;
   background-image: -webkit-gradient(linear, left top, right top, from(#16113f), color-stop(50%, #0e0638), to(#08041f));
   background-image: linear-gradient(to right, #16113f 0%, #0e0638 50%, #08041f 100%);
-  -webkit-box-shadow: black 5px 5px 15px 5px;
-          box-shadow: black 5px 5px 15px 5px;
+  box-shadow: black 5px 5px 15px 5px;
   border: 2px solid #dd820b;
   display: inline-block;
   width: auto;
@@ -410,14 +381,14 @@ main#home h1 {
   text-align: center;
   padding: 1rem;
   background: black;
-  color: #FFF;
+  color: #fff;
   height: 60px;
 }
 
 @media screen and (min-width: 1170px) {
   .projects {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    
+    grid-template-columns: repeat(4, 1fr);
   }
   .contact-form input,
   .contact-form textarea {
@@ -430,16 +401,14 @@ main#home h1 {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media screen and (max-width: 768px) {
   main {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    
+    align-items: center;
     text-align: center;
   }
   main .lg-heading {
@@ -454,33 +423,33 @@ main#home h1 {
   }
   ul.menu-nav.show,
   div.menu-branding.show {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   }
   .menu-nav {
     height: 75vh;
-    -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
     font-size: 24px;
   }
   .menu-branding {
     height: 25vh;
-    -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
   }
   .about-info {
         grid-template-areas: 'bioimage' 'bio' 'skill1' 'skill2' 'skill3';
-    -ms-grid-columns: 1fr;
+ 
         grid-template-columns: 1fr;
   }
   .projects {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    
+      grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
+  main {
+    padding: 2rem;
+  }
+  main #home h1 {
     margin-top: 10vh;
   }
   .projects {
@@ -491,6 +460,16 @@ main#home h1 {
     width: 100%;
     height: auto;
     margin: 2% auto;
+  }
+  #portfolio h1 {
+    font-size: 40px;
+  }
+  #portfolio h2 {
+    font-size: 14px;
+  }
+  #about h1 {
+    font-size: 40px;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
