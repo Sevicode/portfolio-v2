@@ -352,6 +352,12 @@ main#home h1 {
   font-weight: normal;
 }
 
+.email-address {
+  padding-left: 10px;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
