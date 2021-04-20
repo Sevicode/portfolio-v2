@@ -267,10 +267,13 @@ main#home h1 {
   display: grid;
   grid-gap: 30px;
       grid-template-areas: "bioimage bio bio" "skill1 skill2 skill3";
+  -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
 }
 
 .about-info .bio-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: bioimage;
   margin: auto;
   border-radius: 25px;
@@ -278,20 +281,28 @@ main#home h1 {
 }
 
 .about-info .bio {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: bio;
   font-size: 1.5rem;
 }
 
 .about-info .skill-1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: skill1;
 }
 
 .about-info .skill-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: skill2;
 }
 
 .about-info .skill-3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: skill3;
 }
 
@@ -305,7 +316,8 @@ main#home h1 {
   display: -ms-grid;
   display: grid;
   grid-gap: 0.7;
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 
 .projects img {
@@ -326,6 +338,7 @@ main#home h1 {
   background: #141E30;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#243B55), to(#141E30));
   background: linear-gradient(to right, #243B55, #141E30);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   box-shadow: 0px -1px 6px 5px rgba(183, 184, 192, 0.75);
@@ -389,7 +402,8 @@ main#home h1 {
 
 @media screen and (min-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
   .contact-form input,
   .contact-form textarea {
@@ -405,7 +419,8 @@ main#home h1 {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
   .rwd-line {
     display: inline;
@@ -431,26 +446,34 @@ main#home h1 {
   }
   ul.menu-nav.show,
   div.menu-branding.show {
-      transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   .menu-nav {
     height: 75vh;
-    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
     font-size: 24px;
   }
   .menu-branding {
     height: 25vh;
-    transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
   }
   .rwd-line {
     display: inline;
   }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "skill1" "skill2" "skill3";
-    grid-template-columns: 1fr;
+        grid-template-areas: "bioimage" "bio" "skill1" "skill2" "skill3";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
   .projects {
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .rwd-line {
+    display: block;
   }
 }
 
