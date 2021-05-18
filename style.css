@@ -202,7 +202,8 @@ h1.lg-heading,
 h2.lg-heading,
 h3.lg-heading {
   font-size: 6rem;
-  font-family: "Lobster", cursive;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 
 h1.sm-heading,
