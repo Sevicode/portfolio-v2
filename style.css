@@ -201,7 +201,7 @@ h3 {
 h1.lg-heading,
 h2.lg-heading,
 h3.lg-heading {
-  font-size: 6rem;
+  font-size: 4rem;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
@@ -268,14 +268,14 @@ main#home h1 {
   display: grid;
   grid-gap: 30px;
       grid-template-areas: "bioimage bio bio" "skill1 skill2 skill3";
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
 }
 
 .about-info .bio-image {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: bioimage;
+  grid-area:auto;
   margin: auto;
   border-radius: 25px;
   border: #ff7b00 3px solid;
@@ -301,11 +301,11 @@ main#home h1 {
   grid-area: skill2;
 }
 
-.about-info .skill-3 {
+/* .about-info .skill-3 {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: skill3;
-}
+} */
 
 .about-info .skill {
   background: #03163c;
